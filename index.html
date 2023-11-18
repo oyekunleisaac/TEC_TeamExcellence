@@ -65,6 +65,39 @@
         </div>
       </div>
     </section>
+
+    <section class="u-clearfix u-grey-5 u-section-4" id="sec-6949">
+      <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="slideshow">
+              <div class="slides">
+                  <!-- First Slide - Empty Text -->
+                 
+  
+                  <!-- Second Slide -->
+                  <div class="slide">
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" style="background-image: url('images/design.jpeg');" data-image-width="1280" data-image-height="960">
+                          <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
+                      </div>
+                  </div>
+  
+                  <!-- Third Slide -->
+                  <div class="slide">
+                      <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" style="background-image: url('images/prep.jpeg');" data-image-width="1280" data-image-height="960">
+                          <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
+                      </div>
+                  </div>
+  
+                   <!-- Fouth Slide -->
+                   <div class="slide">
+                    <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" style="background-image: url('images/drum.jpeg');" data-image-width="1280" data-image-height="960">
+                        <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
+                    </div>
+                </div>
+                  <!-- Add more slides as needed -->
+              </div>
+          </div>
+      </div>
+  </section>
    
 
     <section class="u-clearfix u-grey-5 u-section-1" id="carousel_e72e">
@@ -89,5 +122,21 @@
     <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-1649"><div class="u-clearfix u-sheet u-sheet-1">
         <p class="u-small-text u-text u-text-variant u-text-1">The Elevation Church | Team Excellence 2023</p>
       </div></footer>
-   
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const slides = document.querySelector('.slides');
+            let currentIndex = 0;
+    
+            function showSlide(index) {
+                slides.style.transform = `translateX(${-index * 100}%)`;
+            }
+    
+            function nextSlide() {
+                currentIndex = (currentIndex + 1) % slides.children.length;
+                showSlide(currentIndex);
+            }
+    
+            setInterval(nextSlide, 5000); // Change slide every 5000 milliseconds (5 seconds)
+        });
+    </script>
 </body></html>
