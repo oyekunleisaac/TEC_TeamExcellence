@@ -54,7 +54,7 @@
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <h2 class="u-align-center u-text u-text-default u-text-1">Watch our presentation</h2>
                   <p class="u-align-center u-text u-text-2">Team Excellence</p>
-                  <a href="#" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-2-base u-radius-50 u-btn-1">learn more</a>
+                  <a href="#" id="openModalButton" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-2-base u-radius-50 u-btn-1">Click to Watch</a>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="1280" data-image-height="960">
@@ -65,6 +65,17 @@
         </div>
       </div>
     </section>
+
+    <center><div id="videoModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <!-- Embedded YouTube video -->
+          <iframe width="260" height="315" src="https://www.youtube.com/embed/a8WnmGZNj20?si=Mzbmk7ISsPD_ILTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <!-- <iframe width="560" height="315" src="https://www.youtube.com/watch?v=a8WnmGZNj20" frameborder="0" allowfullscreen></iframe> -->
+      </div>
+  </div>
+</center>
 
     <section class="u-clearfix u-grey-5 u-section-4" id="sec-6949">
       <div class="u-clearfix u-sheet u-sheet-1">
@@ -93,7 +104,13 @@
                         <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
                     </div>
                 </div>
-                  <!-- Add more slides as needed -->
+
+                 <!-- Fifth Slide -->
+                 <div class="slide">
+                  <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" style="background-image: url('images/tec2.jpeg');" data-image-width="1280" data-image-height="960">
+                      <div class="u-container-layout u-valign-middle u-container-layout-2"></div>
+                  </div>
+              </div>
               </div>
           </div>
       </div>
@@ -138,5 +155,20 @@
     
             setInterval(nextSlide, 5000); // Change slide every 5000 milliseconds (5 seconds)
         });
+    </script>
+    <script>
+      // Function to open the modal
+function openModal() {
+    document.getElementById('videoModal').style.display = 'block';
+}
+
+// Function to close the modal
+function closeModal() {
+    document.getElementById('videoModal').style.display = 'none';
+}
+
+// Event listener for the button
+document.getElementById('openModalButton').addEventListener('click', openModal);
+
     </script>
 </body></html>
