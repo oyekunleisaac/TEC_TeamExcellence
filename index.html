@@ -40,7 +40,10 @@
             <h2 class="u-custom-font u-font-merriweather u-text u-text-1"> 1Corinthians 9:24-25</h2>
             <p class="u-custom-font u-font-merriweather u-text u-text-2"> Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize. Everyone who competes in the games goes into strict training. They do it to get a crown that will not last, but we do it to get a crown that will last forever.</p>
             <p class="u-text u-text-palette-2-base u-text-3">TEAM EXCELLENCE</p>
-            <a href="" class="u-active-custom-color-1 u-border-none u-btn u-button-style u-custom-font u-hover-palette-2-base u-palette-3-light-1 u-btn-1">read more</a>
+            <a href="" class="u-active-custom-color-1 u-border-none u-btn u-button-style u-custom-font u-hover-palette-2-base u-palette-3-light-1 u-btn-1">For we are<br> his
+            workmanship, <br>created in<br> Christ Jesus <br>for good<br> works, which <br>God prepared <br>beforehand, that <br>we should walk <br>in them.
+
+</a>
           </div>
         </div>
       </div>
@@ -54,7 +57,7 @@
                 <div class="u-container-layout u-valign-middle u-container-layout-1">
                   <h2 class="u-align-center u-text u-text-default u-text-1">Watch our presentation</h2>
                   <p class="u-align-center u-text u-text-2">Team Excellence</p>
-                  <a href="#" id="openModalButton" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-2-base u-radius-50 u-btn-1">Click to Watch</a>
+                <a href="#" id="openModalButton" class="u-border-none u-btn u-btn-round u-button-style u-hover-palette-3-light-1 u-palette-2-base u-radius-50 u-btn-1" onclick="openModal()">Click to Watch</a>
                 </div>
               </div>
               <div class="u-align-center u-container-style u-image u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="1280" data-image-height="960">
@@ -66,15 +69,16 @@
       </div>
     </section>
 
-    <center><div id="videoModal" class="modal">
-      <!-- Modal content -->
-      <div class="modal-content">
-          <span class="close" onclick="closeModal()">&times;</span>
-          <!-- Embedded YouTube video -->
-          <iframe width="260" height="315" src="https://www.youtube.com/embed/a8WnmGZNj20?si=Mzbmk7ISsPD_ILTs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+   <center>
+    <div id="videoModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <!-- Embedded YouTube video with autoplay -->
+            <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/a8WnmGZNj20?si=CfQeCobVtcG_Y_Ae&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>-->
+            <iframe width="260" height="315" src="https://www.youtube.com/embed/a8WnmGZNj20?si=Mzbmk7ISsPD_ILTs&autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
-  </div>
+    </div>
 </center>
 
     <section class="u-clearfix u-grey-5 u-section-4" id="sec-6949">
@@ -123,8 +127,11 @@
         <img class="u-align-left u-image u-image-1" data-image-width="1280" data-image-height="960" src="images/tec1.jpeg">
         <div class="u-align-left u-container-style u-expanded-width-xs u-group u-white u-group-1">
           <div class="u-container-layout u-container-layout-1">
-            <h2 class="u-custom-font u-font-merriweather u-text u-text-1"> WORDS FROM PG</h2>
-            <p class="u-custom-font u-font-merriweather u-text u-text-2"> Do you not know that in a race all the runners run, but only one gets the prize? Run in such a way as to get the prize. Everyone who competes in the games goes into strict training. They do it to get a crown that will not last, but we do it to get a crown that will last forever.</p>
+            <h2 class="u-custom-font u-font-merriweather u-text u-text-1"> EXCELLENCE</h2>
+            <p class="u-custom-font u-font-merriweather u-text u-text-2"> In the theater of dreams where ambition beams,
+                Lies a word, a notion, a concept that teems
+                With vitality, energy, unrestrained might,
+                Excellence, it beckons, both day and night...</p>
             <!-- <p class="u-text u-text-palette-2-base u-text-3">TEAM EXCELLENCE</p> -->
             <!-- <a href="" class="u-active-custom-color-1 u-border-none u-btn u-button-style u-custom-font u-hover-palette-2-base u-palette-3-light-1 u-btn-1">read more</a> -->
           </div>
@@ -156,19 +163,14 @@
             setInterval(nextSlide, 5000); // Change slide every 5000 milliseconds (5 seconds)
         });
     </script>
-    <script>
-      // Function to open the modal
-function openModal() {
-    document.getElementById('videoModal').style.display = 'block';
-}
+   <script>
+    function openModal() {
+        document.getElementById('videoModal').style.display = 'block';
+    }
 
-// Function to close the modal
-function closeModal() {
-    document.getElementById('videoModal').style.display = 'none';
-}
+    function closeModal() {
+        document.getElementById('videoModal').style.display = 'none';
+    }
+</script>
 
-// Event listener for the button
-document.getElementById('openModalButton').addEventListener('click', openModal);
-
-    </script>
 </body></html>
